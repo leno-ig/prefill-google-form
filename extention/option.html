@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+    <section class="section">
+      <div class="row">
+        <div class="col s12">
+
+          <div id="url">
+            <blockquote>URL</blockquote>
+            <p><a target="_blank"></a></p>
+          </div>
+          <div id="title">
+            <blockquote>Title</blockquote>
+            <p></p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+
+          <ul class="collection">
+            <li class="collection-item">対象ページのURLに置換したい項目に、${url}と入力してください。
+              <a href="#!" class="secondary-content copyCmd" data-text="${url}">
+                <i class="material-icons">content_copy</i>
+              </a>
+            </li>
+            <li class="collection-item">対象ページのタイトルに置換したい項目に、${title}と入力してください。
+              <a href="#!" class="secondary-content copyCmd" data-text="${title}">
+                <i class="material-icons">content_copy</i>
+              </a>
+            </li>
+            <li class="collection-item">今日の日付に置換したい項目に、${today}と入力してください。
+              <a href="#!" class="secondary-content copyCmd" data-text="${today}">
+                <i class="material-icons">content_copy</i>
+              </a>
+            </li>
+            <li class="collection-item">固定値にしたい項目に、その値を入力してください。</li>
+            <li class="collection-item">空にしたい項目は、空にしてください。</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+
+          <div class="card">
+            <div class="card-content">
+              <div class="row" id="parentNode">
+              </div>
+            </div>
+            <div class="card-action">
+              <button type="submit" name='submitBtn' id="submitBtn" class='btn'>Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="hide" id="input-template">
+    <div class="input-field col s12">
+      <input type="text">
+      <label></label>
+    </div>
+  </div>
+</body>
+
+<script src="materialize.min.js"></script>
+<script src="options.js"></script>
+
+</html>

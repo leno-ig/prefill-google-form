@@ -1,0 +1,10 @@
+body {
+  font-size: 16px;
+}
+.popup .container {
+  min-width: 160px;
+}
+.popup .btn {
+  min-width: 130px;
+  text-align: left !important;
+}
